@@ -209,6 +209,10 @@ header ul li a:hover{
     color: #dfe4ed;
 }
 
+.banner a:hover{
+    background-color: #77782e;
+}
+
 .flexSobre{
     display: flex;
     align-items: center;
@@ -216,11 +220,11 @@ header ul li a:hover{
 }
 
 .flexSobre div{
-    padding: 10vh;
+    padding: 5vh;
 }
 
 .sobrenos{
-    height: 50vh;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -236,12 +240,41 @@ header ul li a:hover{
     text-align: center;
 }
 
-.txt-sobre button {
+.txt-sobre {
     display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.txt-sobre a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9.3rem;
+    height: 3.12rem;
+    background-color: #162b45;
+    border: 0;
+    border-radius: 30px ;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    color: #dfe4ed;
+}
+
+.txt-sobre a:hover{
+    background-color: #77782e;
+}
+
+.flex-botao-sobre {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-
+.video-sobre video{
+    width: 80vh;
+}
 
 .flex-servicos{
     display: flex;
