@@ -217,11 +217,10 @@ header ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.flexSobre div{
-    padding: 5vh;
-}
+
 
 .sobrenos{
     height: 70vh;
@@ -230,6 +229,9 @@ header ul li a:hover{
     background-size: cover;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .sobrenos h1 {
