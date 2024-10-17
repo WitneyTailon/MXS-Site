@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
-    color: #fff;
+    color: #ffffff;
 }
 
 html{
@@ -211,19 +211,11 @@ header ul li a:hover{
 
 .banner a:hover{
     background-color: #77782e;
+    transition: 600ms;
 }
-
-.flexSobre{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
 
 .sobrenos{
-    height: 70vh;
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,6 +224,15 @@ header ul li a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.flexSobre{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .sobrenos h1 {
@@ -247,6 +248,12 @@ header ul li a:hover{
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    width: 45%;
+}
+
+.txt-sobre p {
+    padding-right: 3.2rem;
+    text-align: justify;
 }
 
 .txt-sobre a {
@@ -266,6 +273,7 @@ header ul li a:hover{
 
 .txt-sobre a:hover{
     background-color: #77782e;
+    transition: 600ms;
 }
 
 .flex-botao-sobre {
@@ -274,8 +282,16 @@ header ul li a:hover{
     align-items: center;
 }
 
+.video-sobre {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 45%;
+}
+
 .video-sobre video{
-    width: 80vh;
+    width: 31.563rem;
+    border-radius: 5vh;
 }
 
 .flex-servicos{
