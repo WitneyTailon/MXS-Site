@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -248,7 +249,7 @@ header ul li a:hover{
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    width: 45%;
+    flex-basis: 45%;
 }
 
 .txt-sobre p {
@@ -286,7 +287,7 @@ header ul li a:hover{
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 45%;
+    flex-basis: 45%;
 }
 
 .video-sobre video{
@@ -379,6 +380,116 @@ header ul li a:hover{
 
 .menu-mobile{
     display: none;
+}
+
+.footer {
+    background-color: #162b45;
+    height: 50vh;
+}
+
+.footer p {
+    font-size: 0.8rem;
+}
+
+.footer h1 {
+    font-size: 1.8rem;
+}
+
+.flexFooter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.footer1 {
+    margin: 3vh;
+    margin-left: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35vh;
+}
+
+.footer2 {
+    flex-direction: column;
+    margin: 3vh;
+    display: flex;
+}
+
+.email {
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+.numero1 {
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+.numero2 {
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+.footer2  i{
+    font-size: 1.5rem;
+    margin-right: 1vh;
+}
+
+.footer3 {
+    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+    width: 35vh;
+}
+
+.endereco1 {
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+.endereco1 i {
+    font-size: 1.2rem;
+}
+
+.endereco2 {
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+.endereco2 i {
+    font-size: 1.5rem;
+}
+
+.footer3 i{
+    margin-right: 1vh;
+}
+
+.flexFooter p {
+    font-weight: bold;
+}
+
+.socialFooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.socialFooter a i{
+    font-size: 1.875rem; 
+}
+
+.socialFooter a{
+    text-decoration: none;
+    background-color: #162b45;
+    margin: 0 0.625rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 50px;
+    transition: 100ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 1270px){
@@ -479,5 +590,18 @@ header ul li a:hover{
 
     .social-btn{
         display: none;
+    }
+    .flexSobre {
+        display: flex;
+        flex-direction: column;
+        margin: 3vh;
+        gap: 5vh;
+    }
+    .txt-sobre p{
+        margin-bottom: 2vh;
+    }
+    .flexFooter{
+        flex-direction: column;
+        justify-content: center;
     }
 }
