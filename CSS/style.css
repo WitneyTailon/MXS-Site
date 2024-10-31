@@ -382,114 +382,60 @@ header ul li a:hover{
     display: none;
 }
 
-.footer {
+footer {
     background-color: #162b45;
-    height: 50vh;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.footer p {
-    font-size: 0.8rem;
-}
-
-.footer h1 {
-    font-size: 1.8rem;
-}
-
-.flexFooter {
+.footer-container {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-.footer1 {
-    margin: 3vh;
-    margin-left: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 35vh;
+.footer-column {
+    width: 20%;
+    min-width: 200px;
+    margin: 10px 0;
 }
 
-.footer2 {
-    flex-direction: column;
-    margin: 3vh;
-    display: flex;
-}
-
-.email {
-    display: flex;
-    margin-bottom: 1vh;
-}
-
-.numero1 {
-    display: flex;
-    margin-bottom: 1vh;
-}
-
-.numero2 {
-    display: flex;
-    margin-bottom: 1vh;
-}
-
-.footer2  i{
+.footer-column h4 {
     font-size: 1.5rem;
-    margin-right: 1vh;
+    margin-bottom: 10px;
 }
 
-.footer3 {
-    margin: 3vh;
-    display: flex;
-    flex-direction: column;
-    width: 35vh;
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.endereco1 {
-    display: flex;
-    margin-bottom: 1vh;
-}
-
-.endereco1 i {
-    font-size: 1.2rem;
-}
-
-.endereco2 {
-    display: flex;
-    margin-bottom: 1vh;
-}
-
-.endereco2 i {
-    font-size: 1.5rem;
-}
-
-.footer3 i{
-    margin-right: 1vh;
-}
-
-.flexFooter p {
-    font-weight: bold;
-}
-
-.socialFooter {
-    display: flex;
-    flex-direction: row;
-}
-
-.socialFooter a i{
-    font-size: 1.875rem; 
-}
-
-.socialFooter a{
+.footer-column p {
+    color: #fff;
     text-decoration: none;
-    background-color: #162b45;
-    margin: 0 0.625rem;
-    padding: 0.625rem 1.25rem;
-    border-radius: 50px;
-    transition: 100ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.footer-column i {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+.social-icon {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.social-icon i {
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 0.9em;
 }
 
 @media (max-width: 1270px){
@@ -601,6 +547,7 @@ header ul li a:hover{
         margin-bottom: 2vh;
     }
     .flexFooter{
+        display: flex;
         flex-direction: column;
         justify-content: center;
     }
