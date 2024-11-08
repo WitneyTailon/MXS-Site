@@ -64,6 +64,11 @@ header ul li a:hover{
     color: #fff;
 }
 
+header.rolagemMenu .btn-menu i{
+    font-size: 20px;
+    color: #162b45;
+}
+
 .logo a #logo-site{
      width: 14.375rem;
      height: 4.375rem;
@@ -141,6 +146,98 @@ header ul li a:hover{
     border-radius: 10px;
 }
 
+.btn-menu{
+    display: none;
+}
+
+.btn-menu i{
+    font-size: 30px;
+    color: #fff;
+}
+
+.menu-mobile{
+    height: 100vh;
+    width: 70%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    background-color: #162b45;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%
+}
+
+.menu-mobile.abrir-menu ~ .overlay{
+    display: block;
+}
+
+.menu-mobile .btn-fechar i{
+    font-size: 30px;
+    margin: 20px 0 0 20px;
+}
+
+.menu-mobile .menu-itens-mobile{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.menu-mobile .menu-itens-mobile li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 ;
+}
+
+.menu-mobile .menu-itens-mobile li a{
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding: 5px 7px;
+}
+
+.menu-mobile .menu-itens-mobile li a:hover{
+    background-color: #fff;
+    color: #162b45;
+    padding: 5px 7px;
+}
+
+
+.menu-mobile .social-btn-mobile .social a i{
+    font-size: 20px;
+}
+
+.overlay{
+    background-color: #00000091;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none
+}
+
+header.rolagemMenu .menu-mobile .social-btn-mobile .social a i{
+    font-size: 20px;
+}
+header.rolagemMenu .menu-mobile .menu-itens-mobile li a{
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding: 5px 7px;
+    color: #fff;
+}
+
+header.rolagemMenu .menu-mobile .menu-itens-mobile li a:hover{
+    background-color: #fff;
+    color: #162b45;
+    padding: 5px 7px;
+}
+
 .btn-contato{
     position: fixed;
     right: 0;
@@ -168,8 +265,8 @@ header ul li a:hover{
 .btn-contato a i{
     font-size: 40px;
 }
+
 .banner{
-    background-image: url(/img/banner.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -222,9 +319,6 @@ header ul li a:hover{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .flexSobre{
@@ -249,11 +343,11 @@ header ul li a:hover{
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    flex-basis: 45%;
+    flex-basis: 50%;
 }
 
 .txt-sobre p {
-    padding-right: 3.2rem;
+    padding-bottom: 1rem;
     text-align: justify;
 }
 
@@ -287,7 +381,7 @@ header ul li a:hover{
     display: flex;
     justify-content: center;
     align-content: center;
-    flex-basis: 45%;
+    flex-basis: 50%;
 }
 
 .video-sobre video{
@@ -364,6 +458,115 @@ header ul li a:hover{
     
 }
 
+.flex-contato{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 0 10%;
+}
+
+.contato h1{
+    color: #77782e;
+    font-size: 3.5rem;
+    margin: 40px 0 30px 0;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.info-contato{
+    width: 350px;
+    height: 420px;
+    background-color: #162b45;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.flex-contato h1.titulo-info-contato{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold; 
+    margin: 0 0 30px 0;
+    text-align: left;
+}
+
+.flex-contato i.fa-comment-dots{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold; 
+    margin: 0;
+    text-align: left;
+}
+
+.lista-info-contato ul{
+    list-style: none;
+}
+
+
+.lista-info-contato ul li{
+    margin: 30px 0;
+}
+
+.lista-info-contato ul li .btn-info-contato{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.lista-info-contato ul li .btn-info-contato .bkg-i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    min-height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.lista-info-contato ul li .btn-info-contato .bkg-i i{
+    font-size: 1.5rem;
+}
+
+.form-contato{
+    margin-left: 50px;
+}
+
+.form-contato .row{
+    display: flex;
+    gap: 20px;
+}
+
+.form-contato .form-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-contato .row .form-item input{
+   width: 350px;
+   border: none;
+   border-bottom: 1px solid black;
+}
+
+.form-contato .message input{
+    height: 100px;
+    border: none;
+    border-bottom: 1px solid black;
+ }
+
+.form-contato .form-item label{
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-contato button{
+   width: 100%;
+   height: 40px;
+   background-color: #162b45;
+   color: #fff;
+   border: none;
+}
+
 .menu-icon-mobile{
     display: none;
 }
@@ -380,6 +583,60 @@ header ul li a:hover{
 
 .menu-mobile{
     display: none;
+}
+
+.faleconosco {
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.flexFale {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.faleconosco h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin: 2.5rem 0 0.18rem 0;
+    text-align: center;
+}
+
+.txt-fale {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.txt-fale p {
+    padding-bottom: 1rem;
+    text-align: justify;
+}
+
+.txt-fale a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9.3rem;
+    height: 3.12rem;
+    background-color: #162b45;
+    border: 0;
+    border-radius: 30px ;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    color: #dfe4ed;
+}
+
+.txt-fale a:hover{
+    background-color: #77782e;
+    transition: 600ms;
 }
 
 footer {
@@ -400,6 +657,11 @@ footer {
     width: 20%;
     min-width: 200px;
     margin: 10px 0;
+}
+
+.footer-column img {
+    width: 250px;
+    margin-bottom: 1vh;
 }
 
 .footer-column h4 {
@@ -528,6 +790,10 @@ footer {
         background-color: #fff;
         color: #162b45;
         padding: 5px 7px;
+    }
+
+    .sobrenos {
+        background-image: none;
     }
 
     .menu-itens{
