@@ -40,41 +40,49 @@
                     </div>
                </div>
 
-               <div class="menu-icon-mobile">
-                 <button><i class="fa-solid fa-bars"></i></button>
-               </div>
+                <div class="btn-menu" id="btn-abrir-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                
             </div>
 
-        </div>
+                <!--Menu Mobile-->
+            <div class="menu-mobile" id="menu-mobile">
 
-        <!--Menu Mobile-->
-        <div class="menu-mobile">
-
-            <ul class="menu-itens-mobile">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#sobre_nos">Sobre Nós</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-
-            <div class="social-btn-mobile">
-                <div class="social">
-                    <a href="https://www.instagram.com/mxscredito/" target="_blank"><i class="fa-brands fa-instagram"></i></a>   
-                    <a href="https://www.facebook.com/profile.php?id=61563491319154" target="_blank"><i class="fa-brands fa-facebook"></i></a>    
-                    <a href="https://www.linkedin.com/company/mxs-cr%C3%A9dito/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+                <div class="btn-fechar">
+                    <i class="fa-solid fa-x"></i>
                 </div>
-           </div>
+
+                <ul class="menu-itens-mobile">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre_nos">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+                <div class="social-btn-mobile">
+                    <div class="social">
+                        <a href="https://www.instagram.com/mxscredito/" target="_blank"><i class="fa-brands fa-instagram"></i></a>   
+                        <a href="https://www.facebook.com/profile.php?id=61563491319154" target="_blank"><i class="fa-brands fa-facebook"></i></a>    
+                        <a href="https://www.linkedin.com/company/mxs-cr%C3%A9dito/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="overlay" id="overlay"></div>
 
         </div>
+        
     </header>
 
+    <!--Botao Flutuante-->
     <div class="btn-contato">
         <a href="https://api.whatsapp.com/message/ZLPA6DN3ANNFI1?autoload=1&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
     
     <!--Banner--> 
-    <section class="banner" id="home" style="background-image: url(img/banner.jpg);">
+    <section class="banner" id="home" style="background-image: url(img/bannerInicio.jpg);">
         <h1>Conheça a MXS Crédito!</h1>
         <p>Temos as melhores soluções financeiras para você e para sua empresa.</p>
         <a href="https://api.whatsapp.com/message/ZLPA6DN3ANNFI1?autoload=1&app_absent=0" target="_blank">Fale Conosco</a>
@@ -144,7 +152,99 @@
      </section>
 
     <!-- Contato -->
+    <section class="contato">
+        <h1>Contato</h1>
+        <div class="flex-contato">
+            <div class="info-contato">
+                <h1 class="titulo-info-contato">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    Vamos conversar
+                </h1>
+                <div class="lista-info-contato">
+                    <ul>
+                        <li>
+                            <div class="btn-info-contato">
+                                <div class="bkg-i"><i class="fa-solid fa-map-location-dot"></i></div>
+                                <div class="txt-info-contato">
+                                    <h3>Nossa Localizacao</h3>
+                                    <a href="">clique aqui</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-info-contato">
+                                <div class="bkg-i"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="txt-info-contato">
+                                    <h3>Endereco de email</h3>
+                                    <a href="">contato@mxscredito.com.br</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="btn-info-contato">
+                                <div class="bkg-i"><i class="fa-solid fa-phone-volume"></i></div>
+                                <div class="txt-info-contato">
+                                    <h3>Telefone</h3>
+                                    <p>+55 11 99830-8171 / <br> +55 11 5547-9444</p>
+                                </div>
+                            </div>
 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+             
+            <div class="form-contato">
+                <form action="">
+                    <div class="row">
+                        <div class="form-item">
+                            <label for="">Nome</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-item">
+                            <label for="">Email</label>
+                            <input type="text">
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="form-item">
+                            <label for="">Nome da Empresa</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-item">
+                            <label for="">CNPJ</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    
+                    <div class="message form-item">
+                        <label for="">Mensagem</label>
+                        <input type="text">
+                    </div>      
+                    
+                    <button>Enviar</button>
+                </form>
+            </div>
+    
+        </div>
+        
+    </section>
+
+    <!-- Fale Conosco -->
+    <section class="faleconosco" style="background-image: url(img/bannerFinal.jpg);">
+        <div class="conteiner">
+             <div class="flexFale">
+                <div class="txt-fale">
+                    <h1>MXS Crédito</h1>
+                    <p>Buscando a melhor solução financeira para você e para sua empresa.</p>
+                    <div class="flex-botao-sobre">
+                        <a href="https://api.whatsapp.com/message/ZLPA6DN3ANNFI1?autoload=1&app_absent=0">Fale Conosco</a>
+                    </div>
+                </div>
+             </div>
+        </div>
+     </section>
 
     <!-- Rodapé -->
         <footer>
@@ -157,7 +257,7 @@
                         para você e para sua empresa.</p>
                 </div>
                 
-                <!-- Coluna 3: Contato -->
+                <!-- Coluna 2: Contato -->
                 <div class="footer-column contact-section">
                     <h4>Contato</h4>
                     <ul>
@@ -169,7 +269,7 @@
                     </ul>
                 </div>
                 
-                <!-- Coluna 4: Redes Sociais -->
+                <!-- Coluna 3: Redes Sociais -->
                 <div class="footer-column social-section">
                     <h4>Siga nossas Redes Sociais</h4>
                     <a href="https://www.facebook.com/profile.php?id=61563491319154" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
